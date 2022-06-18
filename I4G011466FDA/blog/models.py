@@ -12,8 +12,9 @@ class Post(models.Model):
     created_date = models.DateTimeField()
     updated_date = models.DateTimeField()
 
+
+   ## returns title and post lable instead of an instance of the model
     def __str__(self) -> str:
       return self.title
     
-    def __str__(self) -> str:
-      return self.text
+   
